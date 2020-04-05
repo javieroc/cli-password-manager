@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-cli-password-manager",
+  "version": "1.0.0",
+  "description": "Simple cli to handle passwords",
+  "bin": "index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Javier Ocampo",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "minimist": "^1.2.5",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.3"
+  }
+}
