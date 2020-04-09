@@ -4,18 +4,17 @@
 
 const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2))
-const { createDB } = require('./lib/db')
+const { createDB } = require('./lib')
 
 async function main () {
-  const db = await createDB()
+  const db = await createDB('postgres')
   const command = argv._.shift()
 
   switch (command) {
     case 'users:create':
       try {
         const { user, pass } = argv
-        console.log('user', user)
-        console.log('pass', pass)
+
         await db.createUser(user, pass)
         console.log(`User ${user} created!`)
       } catch (err) {
