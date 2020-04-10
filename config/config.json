@@ -1,0 +1,14 @@
+{
+  "development": {
+    "storage": "secrets_dev.db",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "storage": "secrets_dev.db",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "use_env_variable": "DB_URL",
+    "dialect": "mysql"
+  }
+}
