@@ -13,7 +13,7 @@
   "dependencies": {
     "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "pg": "^8.0.0",
     "promptly": "^3.0.3",
     "sequelize": "^5.21.6",
